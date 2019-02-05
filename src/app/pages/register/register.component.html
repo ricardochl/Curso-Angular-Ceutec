@@ -1,0 +1,37 @@
+<section class="login">
+    <div class="container-login">
+      <div class="form-login">
+        <h4>Regístrate!</h4>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+          </div>
+          <input type="text" class="form-control" placeholder="Nombre Completo" [(ngModel)]="registerParams.nombre">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"><i class="fa fa-at" aria-hidden="true"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Correo Electrónico" [(ngModel)]="registerParams.email">
+          </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+            </div>
+            <input type="password" class="form-control" placeholder="Contraseña" [(ngModel)]="registerParams.password" (keyup.enter)="signIn()">
+        </div>
+        <div class="wrapp-button">
+            <button type="button" class="btn btn-default btn-create-account" [disabled]="!registerParams.nombre || !registerParams.email || !registerParams.password" 
+              (click)="signIn()"> <i class="fa fa-sign-in" aria-hidden="true"></i> 
+                Crear Cuenta
+            </button>
+        </div>
+      </div>
+      <div class="text">
+          <p>Encuentra las mejores ofertas para viajar. ¡No dejes pasar esta oportunidad! Vuelos Super Baratos a toda Centroamérica.</p>
+          <small>¿Ya tienes una cuenta?</small>
+          <button type="button" class="btn btn-default btn-login" routerLink="/login">Iniciar Sesión</button>
+      </div>
+    </div>
+  </section>
+  

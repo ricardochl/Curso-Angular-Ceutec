@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/*
+ PALETA DE COLES
+
+$red: #FF5349;
+$blue: #4F80E1;
+$green: #18CDCA;
+$grey: #F0F0F1;
+$purple: #292C44;
+$black: #302D33;
+$naranja: #DD4B39;
+*/
+
+.color-light-grey {
+    color: #F0F0F1;
+}
+
+.swal-button {
+    background-color: #292C44;
+    transition: .5s ease;
+}
+
+.swal-button:hover {
+    background-color: #4F80E1!important;
+}
+
+.swal-title , .swal-text {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
