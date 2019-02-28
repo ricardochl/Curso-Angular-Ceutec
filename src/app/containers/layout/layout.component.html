@@ -1,0 +1,9 @@
+<app-header></app-header>
+<section class="layout">
+  <app-sidebar></app-sidebar>
+  <div class="main"  [ngClass]="{'sidebar-fixed' : isOpen}">
+      <div class="container">
+        <router-outlet></router-outlet>
+      </div>
+  </div>
+</section>

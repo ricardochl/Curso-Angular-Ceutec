@@ -1,7 +1,31 @@
+header{
+    position: fixed;
+    width: 100%;
+    z-index:1;
+    top: 0;
+}
 nav{
-    background: #4F80E1;
+    background: #292C44;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: #F0F0F1;
+}
+
+.nav-item a {
+    font-weight: 500;
+}
+
+.userLogged {
+    font-weight: 300;
+}
+
+.userLogged span {
+    margin-left: 5px;
+}
+
+.icon-menu i {
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
 }

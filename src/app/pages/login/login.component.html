@@ -6,16 +6,16 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon1"><i class="fa fa-at" aria-hidden="true"></i></span>
         </div>
-        <input type="email" class="form-control" placeholder="Correo Electrónico" [(ngModel)]="loginParams.email">
+        <input type="email" class="form-control" placeholder="Correo Electrónico">
       </div>
       <div class="input-group mb-3">
           <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon1"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
           </div>
-          <input type="password" class="form-control" placeholder="Contraseña" [(ngModel)]="loginParams.password" (keyup.enter)="login()">
+          <input type="password" class="form-control" placeholder="Contraseña">
       </div>
       <div class="wrapp-button">
-          <button type="button" class="btn btn-default btn-login" [disabled]="!loginParams.email || !loginParams.password" (click)="login()"> <i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar</button>
+          <button type="button" class="btn btn-default btn-login" [disabled]="!loginParams.email || !loginParams.password"> <i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar</button>
       </div>
     </div>
     <div class="text">

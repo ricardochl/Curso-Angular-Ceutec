@@ -14,19 +14,91 @@ $naranja: #DD4B39;
 */
 
 .color-light-grey {
-    color: #F0F0F1;
+  color: #F0F0F1;
+}
+
+.bg-blue {
+  background-color: #4F80E1 !important;
+}
+
+.bg-purple {
+  background-color: #292C44 !important;
 }
 
 .swal-button {
-    background-color: #292C44;
-    transition: .5s ease;
+  background-color: #292C44;
+  transition: .5s ease;
 }
 
 .swal-button:hover {
-    background-color: #4F80E1!important;
+  background-color: #4F80E1 !important;
 }
 
-.swal-title , .swal-text {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+.swal-title,
+.swal-text {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sidebar-fixed {
+  margin-left: 200px;
+}
+
+.custom-card {
+  padding: 1rem;
+  // -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.12) 0 1px 2px rgba(0,0,0,0.24);
+  // -moz-box-shadow: 0 2px 3px rgba(0,0,0,0.12) 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12),  0 2px 3px rgba(0, 0, 0, 0.16);
+}
+
+table tr {
+  cursor: pointer;
+}
+
+table thead {
+  background-color: #292C44;
+  color: white;
+  text-align: center;
+
+}
+
+
+table tbody tr td {
+  text-align: center;
+}
+
+.custom-card .custom-card-head {
+  background-color: #292C44;
+  color: white;
+  text-align: center;
+}
+
+.icon-edit {
+  background-color: #4F80E1;
+  color: white;
+  padding: 0.25rem 0.50rem;
+  border-radius: 4px;
+}
+
+.icon-delete {
+  background-color: #FF5349;
+  color: white;
+  padding: 0.25rem 0.50rem;
+  border-radius: 4px;
+}
+
+.icon-edit,
+.icon-delete {
+  font-size: 1rem;
+}
+
+.btn-cancel{
+  background-color: #292C44!important;
+  transition: .3s ease;
+  color: white;
+}
+.btn-delete {
+    background-color: #FF5349!important;
+    color: white;
+    transition:  .3s ease;
 }

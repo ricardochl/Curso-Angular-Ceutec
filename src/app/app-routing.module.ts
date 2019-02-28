@@ -1,27 +1,31 @@
-import { HomeComponent } from './pages/home/home.component';
+import { LayoutComponent } from './containers/layout/layout.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { RegisterComponent } from './pages/register/register.component';
+import { UserListComponent } from './pages/user/list/user.list.component';
 
 const routes: Routes = [
+
   {
     path: '',
-    redirectTo: 'home',
-    pathMatch:  'full'
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'user',
+        component: UserListComponent,
+      }
+    ]
   },
-  {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
+    {
     path:'login',
     component: LoginComponent
   },
   {
     path:'register',
     component: RegisterComponent
-  }
+  },
+ 
 ];
 
 @NgModule({

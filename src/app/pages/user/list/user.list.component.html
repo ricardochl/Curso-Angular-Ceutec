@@ -1,0 +1,38 @@
+<div class="custom-card">
+  <div class="custom-card-head">
+
+  </div>
+  <div class="custom-card-body">
+    <table class="table table-hover b">
+      <thead class="">
+        <tr>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Fecha de Creación</th>
+          <th colspan="2">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users; index as i">
+          <td>{{user.name}}</td>
+          <td>{{user.email}}</td>
+          <td>
+            <span class="icon-edit">
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </span>
+          </td>
+          <td>
+            <span class="icon-delete">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </span>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+    
+  </div>
+  <div class="custom-card-footer">
+
+  </div>
+</div>
